@@ -7,4 +7,4 @@
 
 alias ls='ls --color=auto'
 
-PS1='[\u  \h $(echo $(pwd) | sed "s/\/home\/jakov/ /") ]\$ '
+PS1='[\e[31m \u \e[34m  \e[32m \h $(echo $(pwd) | sed "s/\/home\/jakov/ /") \e[37m ]\e[36m\$ '
