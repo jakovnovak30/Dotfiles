@@ -5,6 +5,7 @@ set noexpandtab
 set incsearch
 set ignorecase
 syntax on
+colorscheme ron
 
 call plug#begin()
 Plug 'tmsvg/pear-tree'
