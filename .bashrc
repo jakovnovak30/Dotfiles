@@ -7,4 +7,5 @@
 
 alias ls='ls --color=auto'
 
-PS1='\[\e[31m\]\u \[\e[34m\]  \[\e[32m\] \h $(echo $(pwd) | sed "s/\/home\/$USER/ /") \[\e[36m\]->\[\e[00m\] '
+PS1='\[\e[34m\] \u\[\e[31m\] in\[\e[32m\] $(echo $(pwd) | sed "s/\/home\/$USER/ /") \[\e[36m\]\n->\[\e[00m\] '
+neofetch
