@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias cspecs='clear && neofetch'
 
 PS1='\[\e[34m\] \u\[\e[31m\] in\[\e[32m\] $(echo $(pwd) | sed "s/\/home\/$USER/ /") \[\e[36m\]\n->\[\e[00m\] '
 neofetch
