@@ -1,6 +1,11 @@
+# load git info
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%F{yellow}'$'\uf126'' %b%f'
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+setopt PROMPT_SUBST
+PS1='%F{blue} %n%f %F{red}in%f %F{green}${PWD//\/home\/$USER/ }%f ${vcs_info_msg_0_}'$'\n''%F{cyan}->%f '
 
 # history configuration
 HISTFILE=~/.histfile
